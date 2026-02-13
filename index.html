@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Karl Andrei G. Laurente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div class="nav-container">
+        <button class="nav-btn" onclick="scrollToSection('section1')">Profile</button>
+        <button class="nav-btn" onclick="scrollToSection('section2')">Gallery</button>
+        <button class="nav-btn" onclick="scrollToSection('section3')">Personality</button>
+    </div>
+
+    <!-- SECTION 1: Profile (Your existing content) -->
+    <div id="section1" class="section">
+        <div class="box-outline">
+            <div class="profile">
+                <img class="profile-picture" src="Karl.jpg" alt="Karl" width="200px">
+                <div>
+                    <h1 class="name">Karl Andrei Garcia Laurente</h1><br>
+                    <p>A striving programmer exploring the field of programming with a strong principle of consistency and excellency. In the many things I excel in, CSS, Java, and Python are one of the things I can confidently say I am excellent with.</p>
+                </div>
+            </div>
+
+            <br><br><h2 class="personal">Personal Details <button class="dropdown-btn" id="personal-dropdown-btn" style="display:none;">+</button></h2>
+            <div class="dropdown" id="personal-dropdown">
+                <div>
+                    <h2>Address</h2>
+                    <p>Block 8 Barangay Sinikway, La Paz, Iloilo City</p>
+                </div>
+                <div>
+                    <h2>Contact</h2>
+                    <p>09287313637</p>
+                </div>
+                <div>
+                    <h2>Others</h2>
+                    <p>karlandrei.laurente@students.isatu.edu.ph</p>
+                </div>
+            </div>
+
+            <br><br><h2 class="education">Education<button class="dropdown-btn" id="education-dropdown-btn" style="display:none;">+</button></h2>
+            <div class="dropdown" id="education-dropdown">
+                <div>
+                    <h2>Bachelor of Science in Information Technology</h2>
+                </div>
+                <div>
+                    <p>A four-year undergraduate program that focuses on the study of computer systems, software, networks, and information management.</p>
+                </div>
+                <div>
+                    <h2>Primary</h2>
+                    <p>La Paz II Elementary School</p>
+                </div>
+                <div>
+                    <h2>Secondary</h2>
+                    <p>La Paz National High School</p>
+                </div>
+                <div>
+                    <h2>College</h2>
+                    <p>Iloilo Science And Technology University</p>
+                </div>
+            </div>
+
+            <br><br><h2 class="skills">Skills <button class="dropdown-btn" id="skills-dropdown-btn" style="display:none;">+</button></h2>
+            <div class="dropdown" id="skills-dropdown">
+                <img src="python.png" alt="python" width="150px">
+                <div class="python">
+                    <h2>Python</h2>
+                    <p>A high-level, easy-to-read programming language known for its simplicity and versatility. Widely used in web development, data science, automation, and artificial intelligence.</p>
+                </div>
+
+                <img src="json.png" alt="python" width="150px">
+                <div class="Json">
+                    <h2>Json</h2>
+                    <p>A lightweight data format used to store and exchange information. It is easy for humans to read and for machines to parse, often used in APIs and web applications.</p>
+                </div>
+
+                <img src="java.png" alt="python" width="150px">
+                <div class="Java">
+                    <h2>Java</h2>
+                    <p>A powerful, object-oriented programming language designed for portability and reliability. Commonly used in enterprise applications, Android development, and large-scale systems.</p>
+                </div>
+
+                <img src="HTML.png" alt="python" width="150px">
+                <div class="HTML">
+                    <h2>HTML</h2>
+                    <p>The standard markup language for creating web pages. It structures content on the web using elements like headings, paragraphs, links, and images.</p>
+                </div>
+            </div>
+
+            <br><br>
+            <div class="logo">
+                <a href="https://www.linkedin.com/in/karl-andrei-laurente-016103383"><img src="spiderverse portal.png" width="70" height="70" alt="logo"></a>
+                <a href="https://www.instagram.com/undoubtedlykarl"><img src="spiderverse logo.png" width="200" height="70" alt="logo" class="shift-left"></a>
+                <a href="https://www.facebook.com/karlandreigarcia.laurente.7"><img src="spiderpunk.jpg" width="50" height="70"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 2: Photo Gallery -->
+    <div id="section2" class="section">
+        <div class="gallery-container">
+            <h1 class="gallery-title">My Photo Gallery</h1>
+            <div class="gallery-grid">
+                <!-- ADD YOUR PHOTOS HERE -->
+                <!-- Copy and paste this gallery-item block for each photo you want to add -->
+                <!-- Replace "your-photo-1.jpg" with your actual image filename -->
+                <!-- Replace "Photo description" with a description of the photo -->
+                
+                <div class="gallery-item">
+                    <img src="gallery1.jpg" alt="Photo 1">
+                    <div class="gallery-caption">This is my computer setup at home</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gallery2.jpg" alt="Photo 2">
+                    <div class="gallery-caption">Last photo I ever took of Tanjie</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gallery3.jpg" alt="Photo 3">
+                    <div class="gallery-caption">My favorite fast food mascot</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gallery4.jpg" alt="Photo 4">
+                    <div class="gallery-caption">My spiderverse collection cuz I'm a big fan</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gallery5.jpg" alt="Photo 5">
+                    <div class="gallery-caption">A perfectly timed photo of Pedro while he licks his lips</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gallery6.jpg" alt="Photo 6">
+                    <div class="gallery-caption">An E-waste recycle project I made to honor the passed away minecraft player, Technoblade</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gallery7.jpg" alt="Photo 7">
+                    <div class="gallery-caption">Ever since I was a freshman, I used to go to the COMSOC office to play this game</div>
+                </div> 
+
+                <div class="gallery-item">
+                    <img src="gallery8.jpg" alt="Photo 8">
+                    <div class="gallery-caption">My first time seeing the Capitol up close during December</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gallery9.jpg" alt="Photo 9">
+                    <div class="gallery-caption">A recently took picture of our oath-taking as GRID officers</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gallery10.jpg" alt="Photo 10">
+                    <div class="gallery-caption">A picture of the sunset I took by myself which came out really nice</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gallery11.jpg" alt="Photo 11">
+                    <div class="gallery-caption">Birthday celebration of my sister at Mestizo</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gallery12.jpg" alt="Photo 12">
+                    <div class="gallery-caption">Me and my cousin Rv during graduation from kindergarten</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gallery13.jpg" alt="Photo 13">
+                    <div class="gallery-caption">Tree planting activity from last year</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gallery14.jpg" alt="Photo 14">
+                    <div class="gallery-caption">My graduation photo along with my awards and certificates</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gallery15.jpg" alt="Photo 15">
+                    <div class="gallery-caption">Me and my classmates wearing our toga and cap</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gallery16.jpg" alt="Photo 16">
+                    <div class="gallery-caption">Gift-giving activity of COMSOC in the year 2023</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gallery17.jpg" alt="Photo 17">
+                    <div class="gallery-caption">A visit to the cemetery back when I was kid along with my grandmother Rosalina</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gallery18.jpg" alt="Photo 18">
+                    <div class="gallery-caption">Me and my classmates reunion in WIT during the university's college days</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gallery19.jpg" alt="Photo 19">
+                    <div class="gallery-caption">Me with my parents on my graduation day in WIT as SHS</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gallery20.jpg" alt="Photo 20">
+                    <div class="gallery-caption">This was in grade 7 where I insisted to take part in the boy scout off-campus activity</div>
+                </div>
+                <!-- Add more photos by copying the gallery-item block above -->
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 3: Personalities -->
+    <div id="section3" class="section">
+        <div class="personalities-container">
+            <h1 class="personalities-title">My Hobbies</h1>
+            
+            <!-- ADD YOUR PERSONALITY TRAITS HERE -->
+            <!-- Copy and paste this personality-item block for each trait -->
+            <!-- Replace the button text and content text with your own -->
+            
+            <div class="personality-item">
+                <button class="personality-btn" onclick="togglePersonality(this)">
+                Games
+                </button>
+                <div class="personality-content">
+                    <p>I am a very passionate gamer who loves to excel, have fun, and interact with other people, games have saved me multiple times from instances where I felt so alone and worthless. I treasure games a lot as it has been my main coping mechanism ever since.</p>
+                    <div class="gallery-item">
+                    <img src="albion.jpg" alt="albion">
+                    <div class="gallery-caption">This is my current favorite game in which I am really invested in.</div>
+                </div>
+                </div>
+            </div>
+
+            <div class="personality-item">
+                <button class="personality-btn" onclick="togglePersonality(this)">
+                Creative Thinker
+                </button>
+                <div class="personality-content">
+                    <p>Describe your creativity here. Share examples of how you approach problems creatively or how you express your creative side.</p>
+                </div>
+            </div>
+
+            <div class="personality-item">
+                <button class="personality-btn" onclick="togglePersonality(this)">
+                Team Player
+                </button>
+                <div class="personality-content">
+                    <p>Explain your teamwork skills and how you collaborate with others. Share experiences that demonstrate this trait.</p>
+                </div>
+            </div>
+
+            <div class="personality-item">
+                <button class="personality-btn" onclick="togglePersonality(this)">
+                Lifelong Learner
+                </button>
+                <div class="personality-content">
+                    <p>Discuss your passion for learning and how you continuously improve your skills. Mention areas you're currently exploring.</p>
+                </div>
+            </div>
+
+            <div class="personality-item">
+                <button class="personality-btn" onclick="togglePersonality(this)">
+                Problem Solver
+                </button>
+                <div class="personality-content">
+                    <p>Describe your approach to solving problems and overcoming challenges. Give examples of complex problems you've tackled.</p>
+                </div>
+            </div>
+
+            <!-- Add more personality traits by copying the personality-item block above -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

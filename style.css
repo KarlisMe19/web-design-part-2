@@ -1,0 +1,330 @@
+/* ===== GENERAL STYLES ===== */
+body {
+    background-image: url("spiderverse wallpaper.jpg");
+    background-size: cover;
+    background-color: purple;
+    background-attachment: fixed;
+    font-family: Verdana;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== NAVIGATION ===== */
+.nav-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    background: #8806ce;
+    color: white;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.nav-btn:hover {
+    background: violet;
+    transform: scale(1.05);
+}
+
+/* ===== SECTION LAYOUT ===== */
+.section {
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== SECTION 1: PROFILE STYLES ===== */
+.profile-picture {
+    box-shadow: 5px 5px 10px black;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+.profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+.box-outline {
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    background: linear-gradient(to right, #8806ce, violet);
+    border: 8px solid #333;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 5px 5px 500px rgba(0,0,0,0.2);
+}
+
+.name {
+    font-size: 40px;
+}
+
+.personal, .education, .skills {
+    margin-right: 0;
+    position: relative;
+    background: #8806ce;
+    border-radius: 20px;
+    font-size: 30px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.dropdown-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.dropdown {
+    display: none;
+    background: #8806ce;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.logo {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.shift-left {
+    margin-left: -10px;
+}
+
+/* ===== SECTION 2: PHOTO GALLERY STYLES ===== */
+.gallery-container {
+    width: 90%;
+    max-width: 1200px;
+    background: linear-gradient(to right, #8806ce, violet);
+    border: 8px solid #333;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 5px 5px 500px rgba(0,0,0,0.2);
+}
+
+.gallery-title {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-height: 600px;
+    overflow-y: scroll;
+    padding: 20px;
+    background: rgba(136, 6, 206, 0.3);
+    border-radius: 10px;
+}
+
+/* Custom scrollbar */
+.gallery-grid::-webkit-scrollbar {
+    width: 12px;
+}
+
+.gallery-grid::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.gallery-grid::-webkit-scrollbar-thumb {
+    background: #8806ce;
+    border-radius: 10px;
+}
+
+.gallery-grid::-webkit-scrollbar-thumb:hover {
+    background: violet;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover .gallery-caption {
+    transform: translateY(0);
+}
+
+/* ===== SECTION 3: PERSONALITIES STYLES ===== */
+.personalities-container {
+    width: 90%;
+    max-width: 1000px;
+    background: linear-gradient(to right, #8806ce, violet);
+    border: 8px solid #333;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 5px 5px 500px rgba(0,0,0,0.2);
+}
+
+.personalities-title {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.personality-item {
+    margin-bottom: 20px;
+}
+
+.personality-btn {
+    width: 100%;
+    background: #8806ce;
+    color: white;
+    border: 3px solid #333;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: left;
+    position: relative;
+    box-shadow: 5px 5px 10px black;
+}
+
+.personality-btn:hover {
+    background: violet;
+    transform: translateX(10px);
+}
+
+.personality-btn::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 30px;
+    transition: transform 0.3s;
+}
+
+.personality-btn.active::after {
+    content: '−';
+}
+
+.personality-content {
+    display: none;
+    background: rgba(136, 6, 206, 0.6);
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid #333;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    line-height: 1.6;
+}
+
+.personality-content.show {
+    display: block;
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        max-height: 500px;
+    }
+
+    .gallery-item img {
+        height: 200px;
+    }
+
+    .personality-btn {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        top: 10px;
+        right: 10px;
+    }
+
+    .nav-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
