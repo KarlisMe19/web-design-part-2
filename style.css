@@ -328,3 +328,17 @@ img {
         font-size: 14px;
     }
 }
+
+.hello {
+    background-color: black;
+    text-align: center;
+    padding: 50px; /* Add padding so it's visible */
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.lasth2 {
+    font-size: 100rem; /* Make it larger */
+    color: white; /* Make text visible on black background */
+}
